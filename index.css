@@ -1,4 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca:wght@700&display=swap');
+    
+    
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -8,10 +10,79 @@
         padding: 0;
         line-height: 1.4;
         font-size: 1em;
+        color: white;
+        font-family: 'Lexend Deca', "serif";
     }
 
     img{
         display: block;
         width: 100%;
     }
+
+    .flex{
+        display: flex;
+    }
+    .flex-col{
+        flex-direction: column;
+    }
+
+    .flex-flip{
+        flex-direction: column;
+    }
+
+body section article{
+    min-height: 450px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 1.5em;
+}
+
+body section article *{
     
+}
+
+body section article:nth-child(1){
+    background-color: hsl(31, 77%, 52%);
+}
+
+body section article:nth-child(2){
+    background-color: hsl(184, 100%, 22%);
+}
+
+body section article:nth-child(3){
+    background-color: hsl(179, 100%, 13%);
+}
+
+button{
+    background-color: white;
+    color: black;
+    font-family: 'Lexend Deca', "serif";
+    font-weight: 400;
+    box-shadow: none;
+    padding: 0.3rem 0.7rem ;
+    border-radius: 3rem;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', "serif";
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+@media only screen and (min-width: 910px) {
+    .flex-flip{
+        flex-direction: row;
+        justify-items: flex-end;
+    }
+
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 14pt;
+    line-height: 1.6;
+}
+  
+
+
